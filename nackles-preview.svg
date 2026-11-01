@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101622"/><stop offset="1" stop-color="#090b10"/></linearGradient><linearGradient id="edge"><stop stop-color="#6c8cff"/><stop offset="1" stop-color="#7df3e1"/></linearGradient></defs>
+<rect width="1200" height="660" rx="24" fill="url(#bg)"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="64" y="64" fill="#91a0b9" font-size="15" letter-spacing="3">NACKLES / WINDOWS İÇİN</text>
+<text x="64" y="125" fill="#f3f5fa" font-size="40" font-weight="700">Günün akışını kaybetme.</text>
+<text x="64" y="163" fill="#a4afc2" font-size="20">İşin, müziğin ve küçük ihtiyaçların. Tek adada.</text>
+<rect x="390" y="211" width="420" height="62" rx="31" fill="#06080c" stroke="#313b4e"/>
+<rect x="414" y="229" width="26" height="24" rx="8" fill="#142c2b" stroke="#7df3e1" stroke-width="2"/><circle cx="422" cy="240" r="2" fill="#7df3e1"/><circle cx="432" cy="240" r="2" fill="#7df3e1"/>
+<text x="458" y="249" fill="#f1f4f9" font-size="18">Nackles</text><circle cx="668" cy="242" r="5" fill="#4fdb7d"/><text x="685" y="249" fill="#a4afc2" font-size="16">İş bitti</text>
+<rect x="220" y="296" width="760" height="258" rx="30" fill="#0c1018" stroke="#2b3547"/>
+<text x="255" y="338" fill="#e8edf6" font-size="20" font-weight="600">Her şey elinin altında.</text><text x="895" y="337" fill="#7c8ca7" font-size="14">14:25</text>
+<rect x="250" y="360" width="222" height="158" rx="18" fill="#151b29"/>
+<circle cx="277" cy="388" r="5" fill="#e07a4f"/><text x="293" y="394" fill="#b4bfd1" font-size="15">YAPAY ZEKÂ</text>
+<text x="272" y="439" fill="#f4f6fb" font-size="30" font-weight="700">Seni bekliyor.</text><text x="272" y="476" fill="#a4afc2" font-size="15">Claude Code · Codex</text>
+<rect x="489" y="360" width="222" height="158" rx="18" fill="#142225"/>
+<text x="511" y="394" fill="#90cfca" font-size="15">MÜZİĞİN</text><text x="511" y="439" fill="#f4f6fb" font-size="30" font-weight="700">Ritmi koru.</text><text x="511" y="476" fill="#a4afc2" font-size="15">Önceki     Duraklat     Sonraki</text>
+<rect x="728" y="360" width="222" height="158" rx="18" fill="#201d2c"/>
+<text x="750" y="394" fill="#c2afe9" font-size="15">ODAĞIN</text><text x="750" y="441" fill="#f4f6fb" font-size="38" font-weight="700">25:00</text><text x="750" y="476" fill="#a4afc2" font-size="15">Bir işe yer aç.</text>
+<path d="M64 590H1136" stroke="#283247"/>
+<text x="64" y="626" fill="#b9c4d6" font-size="17">AI durumu   ·   Müzik   ·   Pano   ·   Notlar   ·   Dosya tepsisi   ·   Odak</text><text x="950" y="626" fill="#7df3e1" font-size="16">Senin küçük adan.</text>
+</g></svg>

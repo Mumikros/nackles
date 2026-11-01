@@ -1,69 +1,131 @@
+<div align="center">
+
 # Nackles
 
-A Dynamic Island for Windows. A small island at the top of your screen shows what **Claude Code** and **Codex** are doing, lets you answer permission prompts without switching windows, and keeps music, notes, a clipboard history, a file shelf and a focus guard one click away.
+### Windows'un üstünde küçük bir ada. Gününün ortasında daha az pencere.
 
-*Türkçe ve İngilizce arayüz. Turkish and English UI.*
+Yapay zekânın işini takip et. Müziğini yönet. Kopyaladığını bul. Odağını koru.
 
-## Features
+[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-6C8CFF?style=flat-square)](https://github.com/Mumikros/nackles/releases/latest)
+[![License](https://img.shields.io/badge/Lisans-MIT-4FDB7D?style=flat-square)](LICENSE)
+[![Languages](https://img.shields.io/badge/Arayüz-Türkçe%20%2F%20English-E07A4F?style=flat-square)](#bir-dakikada-başla)
 
-- **AI status:** live state of Claude Code and Codex sessions (working, waiting for you, done, error), with a separate tint for each agent.
-- **Permission prompts:** allow or deny a Claude Code permission request right from the island.
-- **Chat:** Claude, Codex and ChatGPT (via Codex login) use your installed CLI and account. Gemini opens its own web interface **inside the island**, with a separate persistent web session; no Gemini CLI or API key is needed. Open the selected service in its own app or website with ↗.
-- **Music:** shows and controls what is playing (Spotify, browsers, anything that uses Windows media controls).
-- **Notes, clipboard history, file shelf:** drop files on the island, convert or merge them with [Filee](https://github.com/KnifeLemon/Filee) if it is installed.
-- **Focus guard:** a gentle breathing screen when you open distracting sites during a focus session. Free.
-- **Make it yours:** rename the assistant, pick one of four mascots or add your own image, choose a color palette.
-- Gets out of the way: tucks into a thin line when a full-screen window is in front.
+**[Windows için indir →](https://github.com/Mumikros/nackles/releases/download/v1.0.0/Nackles-Kurulum-1.0.0.exe)** · [Sürüm notları](https://github.com/Mumikros/nackles/releases/latest) · [Tam kaynak kodu](https://github.com/Mumikros/nackles/releases/download/v1.0.0/Nackles-1.0.0-kaynak.zip)
 
-## Install
+![Nackles özelliklerini gösteren arayüz tanıtım çizimi](nackles-preview.svg)
 
-Download `Nackles-Kurulum-x.y.z.exe` from [Releases](../../releases) and run it.
+<sub>Ürün arayüzünden esinlenen tanıtım çizimi. Windows 10/11 · x64 · Ücretsiz ve açık kaynak.</sub>
 
-The installer is not code-signed yet, so Windows SmartScreen may show a warning. Verify the release source and SHA-256 checksum before deciding whether to run it. A checksum verifies integrity; it does not authenticate the publisher.
+</div>
 
-Requirements: Windows 10/11 (x64). Claude Code and/or Codex are optional; the island works without them.
+## Bir şeyin bitmesini beklerken sürekli pencere değiştirme.
 
-## Privacy
+Claude Code bir işi bitirdi mi? Codex seni mi bekliyor? Az önce kopyaladığın metin neredeydi?
 
-Nackles has **no telemetry, no analytics, no Nackles accounts and no servers**. Selecting Gemini loads Google's website directly.
+Nackles, sık dönüp baktığın küçük şeyleri ekranının üstündeki tek bir adada toplar. Gerektiğinde açılır; ekranın üstünü kaplayan bir pencereyle çalışırken ince bir çizgiye çekilir. Kod yazarken, müzik dinlerken ya da bir işe odaklanırken elinin altında kalır.
 
-What it touches on your computer:
+## Küçük adada neler var?
 
-| What | Why |
-| --- | --- |
-| `~/.claude/settings.json` | Only when you press **Connect** for Claude Code: adds `http` hooks that point to `127.0.0.1` (your own machine). A backup is written next to it first (`settings.json.nackles-yedek`). **Disconnect** or uninstalling removes them again. |
-| `~/.codex/sessions/**` | Read-only, to show Codex activity. Nackles never writes to Codex files. |
-| `%APPDATA%\Nackles\` | Settings, notes, shelf file paths, recent job titles, a random local token, custom mascots, a compiled media helper, focus counters and a debug log (rotated at 512 KB, with one previous copy). These local files can contain private information; do not upload the profile folder or raw logs. |
-| Gemini web session | Google's Gemini website runs in a sandboxed view inside the island. Sign-in cookies stay in its own persistent profile on this computer. Your regular browser and Gemini CLI logins are separate; they are not copied. Google may restrict sign-in from embedded browsers. Nackles does not inject scripts, automate the site or read your conversations. |
-| Clipboard | History is kept in memory only and cleared on quit. Recognized private clipboard markers are respected. Unmarked secrets can still be captured; history can be disabled in Settings. |
-| Files you drop on the shelf | Only opened, converted or moved to the Recycle Bin when you ask. Nothing is permanently deleted. |
+| Gün içinde ihtiyacın olan | Nackles'ta karşılığı |
+| :--- | :--- |
+| **“Ajanım ne yapıyor?”** | Claude Code ve Codex'in çalışma, bekleme, tamamlanma ve hata durumlarını gör. Desteklenen Claude Code izinlerini adadan yanıtla. |
+| **“Şu şarkıyı değiştirsem…”** | Windows medya denetimlerine bağlı oynatıcıları adadan yönet. Spotify ve destekleyen tarayıcılarla çalışır. |
+| **“Biraz önce kopyalamıştım.”** | Metin ve görselleri pano geçmişinden tekrar kopyala. Geçmiş uygulama kapanınca temizlenir. |
+| **“Bunu unutmamam lazım.”** | Kısa notlarını yaz, yapılacaklarını işaretle. Başka bir not uygulaması açmadan devam et. |
+| **“Bu dosyalar burada dursun.”** | Dosyaları tepsiye bırak, aç veya klasörlerinde göster. Filee kuruluysa dönüştürme ve birleştirme seçeneklerini kullan. |
+| **“Sadece 25 dakika odaklanacağım.”** | Odak sayacını başlat. İstersen dikkat dağıtan uygulamalarda nefes ekranıyla kendine geri dönme fırsatı ver. |
 
-The hook server listens only on `127.0.0.1` and rejects any request without the secret token stored in your profile.
-Claude, Codex and ChatGPT chat runs the official `claude` / `codex` programs already on your computer; their traffic goes to Anthropic / OpenAI under your own account. Gemini uses Google's website directly.
+### Sohbet de elinin altında.
 
-Codex activity monitoring and clipboard history are enabled by default and can be disabled in Settings. The media helper reads the foreground window title/process for island visibility and focus protection; titles are not persisted by the helper. Recent AI job titles can include prompt excerpts. CLI tools may retain their own conversation logs outside Nackles. Review your CLI tools and MCP configuration: a read-only filesystem sandbox does not prevent reading files or sending information to the provider.
+**Claude · Codex · ChatGPT · Gemini** sekmeleriyle sorunu adadan sor. Açıkla, çevir ve özetle gibi hızlı işlemlerle kopyaladığın metin üzerinde çalış.
 
-## Uninstall
+- **Claude:** bilgisayarındaki Claude Code ve kendi hesabınla.
+- **Codex:** bilgisayarındaki Codex aracı ve kendi hesabınla.
+- **ChatGPT:** Codex CLI üzerinden, Codex sekmesinden ayrı sohbetle.
+- **Gemini:** kendi web arayüzü adanın içinde, ayrı bir web oturumuyla. Google gömülü girişe izin vermeyebilir; giriş henüz doğrulanmadı.
 
-Windows Settings → Apps → Nackles → Uninstall. The uninstaller also removes Nackles' hooks from Claude Code and the "Start with Windows" entry. Your notes and settings in `%APPDATA%\Nackles` are kept; delete that folder if you want them gone.
+AI araçları isteğe bağlıdır. Müzik, notlar, pano ve odak araçlarını onlar olmadan da kullanabilirsin. AI servislerinin hesap, abonelik ve kullanım sınırları kendilerine aittir.
 
-## Build from source
+### Adanın karakterini sen seç.
+
+Asistanına isim ver. Dört maskottan birini seç veya kendi görselini ekle. Renk paletini, sesleri ve görünüm tercihlerini değiştir. Türkçe ya da İngilizce kullan.
+
+## Bir dakikada başla
+
+1. **[Windows kurulumunu indir.](https://github.com/Mumikros/nackles/releases/download/v1.0.0/Nackles-Kurulum-1.0.0.exe)** Windows 10/11 ve x64 gerekir.
+2. Kurulumu tamamla ve Nackles'ı aç.
+3. **Ctrl + Alt + N** ile adayı sabitle veya aç. Ayarlar'dan kullanmak istediğin özellikleri seç.
+4. Claude Code kullanıyorsan Ayarlar'daki **Bağlan** düğmesiyle durum bağlantısını kur.
+
+<details>
+<summary><strong>İndirme güvenliği ve bilinen sınırlar</strong></summary>
+
+Kurulum henüz kod imzalı değil; Windows bir uyarı gösterebilir. Dosyanın bu deponun Releases sayfasından geldiğini ve SHA-256 özetini kontrol ederek çalıştırıp çalıştırmayacağına karar ver.
+
+`Nackles-Kurulum-1.0.0.exe` SHA-256:
+
+```text
+9343fdd1ba2834038cf9b430aff3eaff126d57e34818fc3c3d5f4ec1941b3d89
+```
+
+Gemini gömülü girişi doğrulanmadı. ChatGPT sekmesi ChatGPT web sitesi yerine Codex CLI kullanır. Güvenlik incelemesinde 33 test geçti; bu, yazılımın kusursuz olduğu anlamına gelmez. Derleme bağımlılıklarındaki mevcut uyarılar [inceleme notlarında](RELEASE_NOTES.md) açıklanıyor.
+
+</details>
+
+## Bilgilerin konusunda açık olalım.
+
+**Nackles hesabı, telemetri veya analiz servisi yok.** Notlar ve ayarlar bilgisayarında saklanır. Pano geçmişi bellekte tutulur; uygulama kapanınca silinir. Tanınan özel pano işaretlerine uyulur; işaretlenmemiş parolalar yine de geçmişe girebilir. Pano geçmişini Ayarlar'dan kapatabilirsin.
+
+AI sohbetine gönderdiğin içerik seçtiğin sağlayıcıya gider. Gemini Google'ın sitesini doğrudan yükler; diğer sohbetler kendi kurulu CLI araçlarını kullanır. CLI/MCP yapılandırmaların dosya okuma ve ağ erişimini etkileyebilir.
+
+<details>
+<summary>Yerel dosya erişimleri ve gizlilik ayrıntıları</summary>
+
+| Konum / veri | Kullanımı |
+| :--- | :--- |
+| `~/.claude/settings.json` | Bağlan'ı seçince yalnızca yerel `127.0.0.1` adresine giden hook'lar eklenir. Önce yedek alınır; bağlantıyı kaldırınca Nackles hook'ları kaldırılır. Yerel sunucu rastgele bir token ister. |
+| `~/.codex/sessions/**` | Codex etkinliğini göstermek için okunur. İzleme varsayılan olarak açıktır ve kapatılabilir. |
+| `%APPDATA%\Nackles\` | Ayarlar, notlar, dosya yolları, son iş başlıkları, özel maskotlar, yerel token, yardımcı program ve döndürülen hata günlükleri saklanır. Profil klasörünü veya ham günlükleri internette paylaşma. İş başlıkları isteminden kısa parçalar içerebilir. |
+| Gemini profili | Çerezler ayrı kalıcı profilde tutulur. Normal tarayıcıdan veya CLI'dan çerez aktarılmaz. Siteye script eklenmez. |
+| Öndeki pencere | Ada görünürlüğü ve odak koruması için pencere başlığı/programı anlık okunur. Medya yardımcısı bu başlıkları kaydetmez. |
+| Dosya tepsisi | Bıraktığın dosyaların yolları tutulur. Silme işlemi istendiğinde dosyalar Geri Dönüşüm Kutusu'na taşınır. |
+
+Pano ve Codex izleme varsayılan olarak açıktır. CLI araçları Nackles dışında kendi sohbet kayıtlarını tutabilir. Ayrıntılar ve özel güvenlik bildirimi için [SECURITY.md](SECURITY.md).
+
+</details>
+
+## Nackles'ın büyümesine katıl
+
+İşine yaradıysa **bir yıldız bırak**, bir arkadaşınla paylaş veya deneyimini [Issues](https://github.com/Mumikros/nackles/issues) üzerinden anlat. Tekrarlanabilir hata raporları, çeviriler ve katkılar projeyi ileri taşır.
+
+**Maddi destek:** bağış hesabı henüz etkin değil. Doğrulanmış ödeme bağlantısı hazır olduğunda burada paylaşılacak. [Destek durumu →](SUPPORT.md)
+
+## Kaynak koddan çalıştır
+
+Şimdilik **[tam kaynak arşivini](https://github.com/Mumikros/nackles/releases/download/v1.0.0/Nackles-1.0.0-kaynak.zip)** indirip aç. Kaynak klasörleri bu arşivin içinde; GitHub'ın otomatik oluşturduğu “Source code” indirmesi yerine bu dosyayı kullan.
+
+Arşivi açtığın klasörde:
 
 ```bash
 npm ci
-npm start        # run
-npm test         # tests
-npm run dist     # build the installer into dist/
+npm test
+npm start
+# Windows kurulumunu derlemek için:
+npm run dist
 ```
 
-## Notes
+## English
 
-Nackles is an independent project. It is not affiliated with or endorsed by Anthropic, OpenAI, Google, Apple or Microsoft. Product names and trademarks belong to their respective owners. Filee is a separate MIT-licensed project by KnifeLemon and is not bundled. Gemini embedded sign-in has not been verified and may be restricted by Google.
+**A small island for Windows. Fewer interruptions throughout your day.**
 
-## Support and security
+Follow Claude Code and Codex activity, control your music, recover copied text and images, keep quick notes and protect your focus—all from the top of your screen. Personalize it with mascots, colors and your own assistant name.
 
-See [Support Nackles](SUPPORT.md) for contribution and funding status, and [Security](SECURITY.md) for security boundaries and reporting guidance.
+[Download for Windows x64](https://github.com/Mumikros/nackles/releases/download/v1.0.0/Nackles-Kurulum-1.0.0.exe) · [Complete source archive](https://github.com/Mumikros/nackles/releases/download/v1.0.0/Nackles-1.0.0-kaynak.zip)
 
-## License
+Free and MIT-licensed. Turkish and English UI. No Nackles account or analytics. AI conversations use your installed CLI/account or Google's Gemini website. ChatGPT chat currently uses Codex CLI. Embedded Gemini sign-in is not verified. The installer is unsigned; review the release notes before running it. Funding is not enabled yet.
 
-[MIT](LICENSE)
+---
+
+[MIT lisansı](LICENSE) · [Güvenlik](SECURITY.md) · [Sürüm notları](RELEASE_NOTES.md) · [Destek](SUPPORT.md)
+
+Nackles bağımsız bir projedir; Anthropic, OpenAI, Google, Apple veya Microsoft ile bağlantılı değildir. Ürün adları sahiplerine aittir. İsteğe bağlı [Filee](https://github.com/KnifeLemon/Filee) entegrasyonu ayrı bir projedir ve pakete dahil değildir.
