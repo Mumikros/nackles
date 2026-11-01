@@ -35,7 +35,11 @@ Nackles, sık dönüp baktığın küçük şeyleri ekranının üstündeki tek 
 | **“Bu dosyalar burada dursun.”** | Dosyaları tepsiye bırak, aç veya klasörlerinde göster. Filee kuruluysa dönüştürme ve birleştirme seçeneklerini kullan. |
 | **“Sadece 25 dakika odaklanacağım.”** | Odak sayacını başlat. İstersen dikkat dağıtan uygulamalarda nefes ekranıyla kendine geri dönme fırsatı ver. |
 
+![Pano geçmişi ve not defteri için örnek içerikli tanıtım çizimi](nackles-tools.svg)
+
 ### Sohbet de elinin altında.
+
+![Claude Code ve Codex durumlarını anlatan tanıtım çizimi](nackles-ai.svg)
 
 **Claude · Codex · ChatGPT · Gemini** sekmeleriyle sorunu adadan sor. Açıkla, çevir ve özetle gibi hızlı işlemlerle kopyaladığın metin üzerinde çalış.
 
@@ -49,6 +53,8 @@ AI araçları isteğe bağlıdır. Müzik, notlar, pano ve odak araçlarını on
 ### Adanın karakterini sen seç.
 
 Asistanına isim ver. Dört maskottan birini seç veya kendi görselini ekle. Renk paletini, sesleri ve görünüm tercihlerini değiştir. Türkçe ya da İngilizce kullan.
+
+![Uygulamadaki Robot, Glitch, Gölge ve Baykuş maskotlarıyla tanıtım çizimi](nackles-mascots.svg)
 
 ## Bir dakikada başla
 

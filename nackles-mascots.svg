@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="530" viewBox="0 0 1200 530"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111b2b"/><stop offset="1" stop-color="#090c13"/></linearGradient></defs><style>.eyes-happy,.eyes-sleepy,.eyes-sad,.eyes-wow,.eyes-dizzy{display:none}</style><rect width="1200" height="530" rx="24" fill="url(#bg)"/><g font-family="Segoe UI,Arial,sans-serif"><text x="52" y="48" fill="#7df3e1" font-size="13" font-weight="600">SENİN ADAN, SENİN KARAKTERİN</text><text x="52" y="105" fill="#f1f5fb" font-size="35" font-weight="700">Biraz da sana benzesin.</text><text x="52" y="143" fill="#abb8cb" font-size="19" font-weight="400">Maskotunu seç, paletini değiştir veya kendi görselini ekle.</text><rect x="52" y="190" width="256" height="234" rx="18" fill="#141d2b"/><svg x="94" y="206" width="144" height="144" class="mascot mood-normal kind-robot" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g class="body">
+      <g class="antennae">
+        <path d="M46 28 L38 11" stroke="#15171C" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+        <path d="M74 28 L82 11" stroke="#15171C" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+        <circle class="tip" cx="38" cy="10" r="6" fill="#3EE0C6" stroke="#15171C" stroke-width="3.5"/>
+        <circle class="tip" cx="82" cy="10" r="6" fill="#3EE0C6" stroke="#15171C" stroke-width="3.5"/>
+      </g>
+      <rect x="7" y="54" width="12" height="26" rx="5" fill="#EEF1F5" stroke="#15171C" stroke-width="4" opacity=".85"/>
+      <rect x="101" y="54" width="12" height="26" rx="5" fill="#EEF1F5" stroke="#15171C" stroke-width="4" opacity=".85"/>
+      <rect x="15" y="24" width="90" height="82" rx="33" fill="#EEF1F5" stroke="#15171C" stroke-width="5"/>
+      <rect x="25" y="39" width="70" height="42" rx="21" fill="#12141A"/>
+      <rect x="33" y="44" width="18" height="4" rx="2" fill="#FFFFFF" opacity=".16"/>
+      
+      <g class="eyes-normal"><rect class="eye" x="42" y="51" width="11" height="17" rx="5.5" fill="#7DF3E1"/><rect class="eye" x="67" y="51" width="11" height="17" rx="5.5" fill="#7DF3E1"/></g>
+      <g class="eyes-happy" fill="none" stroke="#7DF3E1" stroke-width="4" stroke-linecap="round"><path d="M40.5 62.5 Q47.5 51.5 54.5 62.5"/><path d="M65.5 62.5 Q72.5 51.5 79.5 62.5"/></g>
+      <g class="eyes-sleepy" fill="none" stroke="#7DF3E1" stroke-width="4" stroke-linecap="round"><path d="M40.5 60.5 Q47.5 65.5 54.5 60.5"/><path d="M65.5 60.5 Q72.5 65.5 79.5 60.5"/></g>
+      <g class="eyes-sad" fill="none" stroke="#FF8A8A" stroke-width="4" stroke-linecap="round">
+        <path d="M40.5 55.5 L53.5 60.5"/><path d="M79.5 55.5 L66.5 60.5"/>
+        <circle cx="47.5" cy="66.5" r="2.5" fill="#FF8A8A" stroke="none"/><circle cx="72.5" cy="66.5" r="2.5" fill="#FF8A8A" stroke="none"/>
+      </g>
+      <g class="eyes-wow"><circle cx="47.5" cy="59.5" r="7.5" fill="#FFD866"/><circle cx="49.5" cy="57.5" r="2.4" fill="#12141A"/><circle cx="72.5" cy="59.5" r="7.5" fill="#FFD866"/><circle cx="74.5" cy="57.5" r="2.4" fill="#12141A"/></g>
+      <g class="eyes-dizzy" fill="none" stroke="#7DF3E1" stroke-width="3" stroke-linecap="round"><path d="M47.5 59.5 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/><path d="M72.5 59.5 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/></g>
+      <g class="cheeks"><circle cx="31" cy="89" r="5" fill="#FF9AAE" opacity=".75"/><circle cx="89" cy="89" r="5" fill="#FF9AAE" opacity=".75"/></g>
+      <path d="M53 91 Q60 97 67 91" stroke="#15171C" stroke-width="3.5" stroke-linecap="round" fill="none"/></g></svg><text text-anchor="middle" x="180" y="390" fill="#e4ecf8" font-size="21" font-weight="600">Robot</text><rect x="332" y="190" width="256" height="234" rx="18" fill="#141d2b"/><svg x="374" y="206" width="144" height="144" class="mascot mood-normal kind-glitch" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g class="body">
+      <path class="ghost-echo" d="M30 106 V58 a30 30 0 0 1 60 0 V106 l-10 -9 -10 9 -10 -9 -10 9 -10 -9z" fill="none" stroke="#FF4FD8" stroke-width="3.5" stroke-linejoin="round" opacity=".75"/>
+      <path d="M30 106 V58 a30 30 0 0 1 60 0 V106 l-10 -9 -10 9 -10 -9 -10 9 -10 -9z" fill="#1E1030" stroke="#C08BFF" stroke-width="4" stroke-linejoin="round"/>
+      <path class="tip" d="M36 82 h12 M70 40 h12" stroke="#FF4FD8" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
+      
+      <g class="eyes-normal"><rect class="eye" x="42.5" y="53.5" width="11" height="17" rx="5.5" fill="#FF6BE0"/><rect class="eye" x="66.5" y="53.5" width="11" height="17" rx="5.5" fill="#FF6BE0"/></g>
+      <g class="eyes-happy" fill="none" stroke="#FF6BE0" stroke-width="4" stroke-linecap="round"><path d="M41 65 Q48 54 55 65"/><path d="M65 65 Q72 54 79 65"/></g>
+      <g class="eyes-sleepy" fill="none" stroke="#FF6BE0" stroke-width="4" stroke-linecap="round"><path d="M41 63 Q48 68 55 63"/><path d="M65 63 Q72 68 79 63"/></g>
+      <g class="eyes-sad" fill="none" stroke="#FF8A8A" stroke-width="4" stroke-linecap="round">
+        <path d="M41 58 L54 63"/><path d="M79 58 L66 63"/>
+        <circle cx="48" cy="69" r="2.5" fill="#FF8A8A" stroke="none"/><circle cx="72" cy="69" r="2.5" fill="#FF8A8A" stroke="none"/>
+      </g>
+      <g class="eyes-wow"><circle cx="48" cy="62" r="7.5" fill="#FFD866"/><circle cx="50" cy="60" r="2.4" fill="#12141A"/><circle cx="72" cy="62" r="7.5" fill="#FFD866"/><circle cx="74" cy="60" r="2.4" fill="#12141A"/></g>
+      <g class="eyes-dizzy" fill="none" stroke="#FF6BE0" stroke-width="3" stroke-linecap="round"><path d="M48 62 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/><path d="M72 62 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/></g></g></svg><text text-anchor="middle" x="460" y="390" fill="#e4ecf8" font-size="21" font-weight="600">Glitch</text><rect x="612" y="190" width="256" height="234" rx="18" fill="#141d2b"/><svg x="654" y="206" width="144" height="144" class="mascot mood-normal kind-golge" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g class="body">
+      <path class="tip" d="M96 82 l10 -5 -6 11 11 -4" fill="none" stroke="#FFB020" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M30 40 L40 16 L53 35 Q60 33 67 35 L80 16 L90 40 Q98 54 96 72 Q92 100 60 102 Q28 100 24 72 Q22 54 30 40z" fill="#2A0C0C" stroke="#FF4646" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M40 24 L44 34 M80 24 L76 34" stroke="#FF4646" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+      
+      <g class="eyes-normal"><path class="eye" d="M38 62 q9 -8 18 0 q-9 8 -18 0z" fill="#FFB020"/><rect x="45.6" y="57" width="2.8" height="10" rx="1.4" fill="#120404"/><path class="eye" d="M64 62 q9 -8 18 0 q-9 8 -18 0z" fill="#FFB020"/><rect x="71.6" y="57" width="2.8" height="10" rx="1.4" fill="#120404"/></g>
+      <g class="eyes-happy" fill="none" stroke="#FFB020" stroke-width="4" stroke-linecap="round"><path d="M40 65 Q47 54 54 65"/><path d="M66 65 Q73 54 80 65"/></g>
+      <g class="eyes-sleepy" fill="none" stroke="#FFB020" stroke-width="4" stroke-linecap="round"><path d="M40 63 Q47 68 54 63"/><path d="M66 63 Q73 68 80 63"/></g>
+      <g class="eyes-sad" fill="none" stroke="#FF8A8A" stroke-width="4" stroke-linecap="round">
+        <path d="M40 58 L53 63"/><path d="M80 58 L67 63"/>
+        <circle cx="47" cy="69" r="2.5" fill="#FF8A8A" stroke="none"/><circle cx="73" cy="69" r="2.5" fill="#FF8A8A" stroke="none"/>
+      </g>
+      <g class="eyes-wow"><circle cx="47" cy="62" r="7.5" fill="#FFD866"/><circle cx="49" cy="60" r="2.4" fill="#12141A"/><circle cx="73" cy="62" r="7.5" fill="#FFD866"/><circle cx="75" cy="60" r="2.4" fill="#12141A"/></g>
+      <g class="eyes-dizzy" fill="none" stroke="#FFB020" stroke-width="3" stroke-linecap="round"><path d="M47 62 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/><path d="M73 62 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/></g>
+      <path d="M57 76 h6 l-3 3.5z" fill="#FFB020"/>
+      <path d="M30 78 l-14 -3 M30 83 l-14 2 M90 78 l14 -3 M90 83 l14 2" stroke="#FF4646" stroke-width="2" stroke-linecap="round" opacity=".6"/></g></svg><text text-anchor="middle" x="740" y="390" fill="#e4ecf8" font-size="21" font-weight="600">Gölge</text><rect x="892" y="190" width="256" height="234" rx="18" fill="#141d2b"/><svg x="934" y="206" width="144" height="144" class="mascot mood-normal kind-baykus" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><g class="body">
+      <path d="M26 30 L42 42 Q60 35 78 42 L94 30 L92 72 Q90 104 60 106 Q30 104 28 72 Z" fill="#1A1A1C" stroke="#F5C542" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="45" cy="62" r="15" fill="#0B0B0C" stroke="#F5C542" stroke-width="3"/>
+      <circle cx="75" cy="62" r="15" fill="#0B0B0C" stroke="#F5C542" stroke-width="3"/>
+      
+      <g class="eyes-normal"><circle class="eye" cx="45" cy="62" r="7" fill="#FFFFFF"/><circle cx="47.5" cy="59.5" r="2" fill="#FFFFFF" opacity=".9"/><circle class="eye" cx="75" cy="62" r="7" fill="#FFFFFF"/><circle cx="77.5" cy="59.5" r="2" fill="#FFFFFF" opacity=".9"/></g>
+      <g class="eyes-happy" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"><path d="M38 65 Q45 54 52 65"/><path d="M68 65 Q75 54 82 65"/></g>
+      <g class="eyes-sleepy" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"><path d="M38 63 Q45 68 52 63"/><path d="M68 63 Q75 68 82 63"/></g>
+      <g class="eyes-sad" fill="none" stroke="#FF8A8A" stroke-width="4" stroke-linecap="round">
+        <path d="M38 58 L51 63"/><path d="M82 58 L69 63"/>
+        <circle cx="45" cy="69" r="2.5" fill="#FF8A8A" stroke="none"/><circle cx="75" cy="69" r="2.5" fill="#FF8A8A" stroke="none"/>
+      </g>
+      <g class="eyes-wow"><circle cx="45" cy="62" r="7.5" fill="#FFD866"/><circle cx="47" cy="60" r="2.4" fill="#12141A"/><circle cx="75" cy="62" r="7.5" fill="#FFD866"/><circle cx="77" cy="60" r="2.4" fill="#12141A"/></g>
+      <g class="eyes-dizzy" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"><path d="M45 62 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/><path d="M75 62 m-1 0 a1 1 0 1 1 2 0 a3 3 0 1 1 -5 0 a5 5 0 1 1 9 0"/></g>
+      <path class="tip" d="M55 78 L60 88 L65 78 Z" fill="#F5C542"/>
+      <path d="M46 94 l6 4 6 -4 M62 94 l6 4 6 -4" fill="none" stroke="#F5C542" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/></g></svg><text text-anchor="middle" x="1020" y="390" fill="#e4ecf8" font-size="21" font-weight="600">Baykuş</text><text x="52" y="461" fill="#abb8cb" font-size="18" font-weight="400">Robotun sakinliği mi, neon bir karakter mi? Adını da sen koy.</text><text x="52" y="499" fill="#788ba7" font-size="13" font-weight="400">NACKLES  /  Özellik tanıtım çizimi · Örnek içerik</text></g></svg>
