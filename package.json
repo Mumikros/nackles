@@ -1,0 +1,71 @@
+{
+  "name": "nackles",
+  "productName": "Nackles",
+  "version": "1.0.0",
+  "description": "Nackles: Windows için Dynamic Island. Claude Code ve Codex'in ne yaptığını gösterir, müzik, odak, not ve dosya tepsisi bir arada.",
+  "author": "Nackles",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.js",
+    "icons": "electron scripts/make-icons.js",
+    "dist": "electron-builder --win nsis",
+    "check:publish": "node scripts/check-publish.js"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.nackles.app",
+    "productName": "Nackles",
+    "copyright": "Nackles",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json",
+      "!src/**/*.md"
+    ],
+    "asarUnpack": [
+      "src/media/**",
+      "src/assets/**"
+    ],
+    "electronFuses": {
+      "runAsNode": false,
+      "enableNodeOptionsEnvironmentVariable": false,
+      "enableNodeCliInspectArguments": false,
+      "enableCookieEncryption": true,
+      "enableEmbeddedAsarIntegrityValidation": true,
+      "onlyLoadAppFromAsar": true
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Nackles",
+      "runAfterFinish": true,
+      "installerIcon": "src/assets/icon.ico",
+      "uninstallerIcon": "src/assets/icon.ico",
+      "artifactName": "Nackles-Kurulum-${version}.exe",
+      "include": "build/installer.nsh",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}
